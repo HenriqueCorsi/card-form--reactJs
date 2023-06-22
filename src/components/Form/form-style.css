@@ -1,0 +1,103 @@
+.form-box{
+    width: 40%;
+    margin: 5rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px #000;
+    background-color: #e2e2e2;
+}
+
+.infoUser-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.infoUser-box input{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px #000;
+    font-size: 20px;
+}
+
+.date-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.date-box input{
+    width: 15%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px #000;
+    font-size: 20px;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+button{
+    width: 60%;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px #000;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #000000;
+    color: #fff;
+}
+
+button:hover{
+    scale: 110%;
+}
+
+@media screen and (max-width: 500px) {
+    .form-box{
+        width: 80%;
+    }
+
+    .date-box{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .date-box input{
+        width: 50%;
+        margin: 1rem 0;
+    }
+
+    button{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 999px) {
+    .form-box{
+        width: 80%;
+    }
+
+    .infoUser-box input, .date-box input{
+        font-size: 16px;
+    }
+
+    button{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .form-box{
+        width: 80%;
+    }
+}
+
