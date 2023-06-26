@@ -66,11 +66,11 @@ h3{
 
 .card-number{
     width: 85%;
+    margin-left: 2rem;
 }
 
 #input-number{
     font-size: 30px;
-    font-weight: 700;
 }
 
 .card-holder{
