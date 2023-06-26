@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Libertad;
+    src: url('../../Libertad-ExtraBoldItalic.otf');
+}
+
+.container{
+    width: 30%;
+    height: 300px;
+    margin: 2.5rem auto;
+    position: relative;
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+}   
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    transition: all 1s;
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    background-image: linear-gradient(to bottom, #0088ff, #005eff );
+    box-shadow: 1px 1px 6px #000;
+    color: #ffffff;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-image: linear-gradient(to bottom, #0088ff, #005eff );
+    box-shadow: 1px 1px 6px #000;
+    color: #ffffff;
+}
+
+.first-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin: 1rem auto;
+}
+
+img{
+    width: 28%;
+    height: 100px;
+}
+
+h3{
+    font-family: Libertad;
+    font-size: 45px;
+}
+
+.card-number{
+    width: 85%;
+}
+
+#input-number{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-holder{
+    width: 85%;
+    margin: -1rem 2rem;
+    text-align: left;
+}
+
+.card-holder h2{
+    font-size: 30px;
+}
+
+.user-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    height: 50px;
+    margin: -1rem 2rem;
+}
+
+.date-box-input{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 25%;
+}
+
+#user-name,#month, #year{
+    font-size: 25px;
+}
