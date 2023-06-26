@@ -20,8 +20,8 @@ function Card(){
                     <div className='user-input'>
                         <p id='user-name'>**********************</p>
                         <div className='date-box-input'>
-                            <p id='month'>06</p>
-                            <p id='year'>2026</p>
+                            <p id='month'>**</p>
+                            <p id='year'>****</p>
                         </div>
                     </div>
                 </div>
