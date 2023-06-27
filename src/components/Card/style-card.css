@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.container.flipped .card {
+    transform: rotateY(180deg);
+  }
+
 .container:hover .card{
     transform: rotateY(180deg);
 }   
@@ -95,10 +99,41 @@ h3{
 .date-box-input{
     display: flex;
     justify-content: space-between;
-    align-content: center;
     width: 25%;
 }
 
 #user-name,#month, #year{
     font-size: 25px;
 }
+
+.black-belt{
+    height: 60px;
+    margin: 2rem 0;
+    background-color: #000;
+}
+
+.white{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.desc-cvv{
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.desc-cvv p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.white p{
+    margin-right: 1rem;
+}
+
