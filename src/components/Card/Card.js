@@ -1,9 +1,11 @@
 import './style-card.css'
 import Chip from "../../chip.png"
 
-function Card({cardNumber, cardHolder, cardMm, cardYy}){
+function Card({cardNumber, cardHolder, cardMm, cardYy, cvv, isFlipped, isHovered}){
+    const shouldFlip = isFlipped || isHovered;
+
     return(
-        <div className='container'>
+        <div className={`container ${shouldFlip ? 'flipped' : ''}`}>
             <div className='card'>
                 {/*FRONT*/}
                 <div className='front'>
@@ -27,7 +29,15 @@ function Card({cardNumber, cardHolder, cardMm, cardYy}){
                 </div>
                 {/*BACK*/}
                 <div className='back'>
-                    back
+                    <div className='black-belt'>
+                        
+                    </div>
+                    <div className='desc-cvv'>
+                        <p>cvv</p>
+                    </div>
+                    <div className='black-belt white'>
+                        <p className='cvv'>{cvv}</p>
+                    </div>
                 </div>
             </div>
         </div>
